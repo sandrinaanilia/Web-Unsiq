@@ -1,28 +1,28 @@
 import { useState } from "react";
-import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import welcome1 from "../assets/img/welcome1.jpeg";
-import { useDispatch, useSelector } from "react-redux";
-import { SignIn } from "../store/auth.js";
 
 const Login = () => {
   const [role, setRole] = useState("Mahasiswa");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [message, setMessage] = useState("");
+  const [message, setMessage] = useState(""); // Tambahkan state untuk pesan error atau sukses
   const navigate = useNavigate();
-  const dispatch = useDispatch();
+
   const handleSubmit = async (e) => {
     e.preventDefault();
+    // Logika untuk autentikasi pengguna
     try {
-      const response = await axios.post("http://localhost:3000/login", { email, password });
-      localStorage.setItem("token", response.data.token);
-      dispatch(SignIn());
-      setMessage("Login successful! Redirecting to Formulir Pendaftaran...");
-      navigate("/formulirpendaftaran");
+      // Contoh validasi sederhana
+      if (email === "admin@example.com" && password === "password" && role === "Admin") {
+        navigate("/admin-dashboard");
+      } else if (email === "student@example.com" && password === "password" && role === "Mahasiswa") {
+        navigate("/student-dashboard");
+      } else {
+        setMessage("Email atau kata sandi salah.");
+      }
     } catch (error) {
-      console.log(error);
-      setMessage("Login failed! Please check your credentials and try again.");
+      setMessage("Terjadi kesalahan. Silakan coba lagi.");
     }
   };
 
@@ -39,10 +39,16 @@ const Login = () => {
 
           {/* Toggle buttons */}
           <div className="flex mb-6 rounded-md hover:bg-teal-700 transition duration-300">
-            <button className={`flex-1 py-2 rounded-l-lg focus:outline-none ${role === "Mahasiswa" ? "bg-teal-600 text-white font-bold" : "bg-emerald-50 text-emerald-600 font-bold"}`} onClick={() => setRole("Mahasiswa")}>
+            <button
+              className={`flex-1 py-2 rounded-l-lg focus:outline-none ${role === "Mahasiswa" ? "bg-teal-600 text-white font-bold" : "bg-emerald-50 text-emerald-600 font-bold"}`}
+              onClick={() => setRole("Mahasiswa")}
+            >
               Mahasiswa
             </button>
-            <button className={`flex-1 py-2 rounded-r-lg focus:outline-none ${role === "Admin" ? "bg-teal-600 text-white font-bold" : "bg-emerald-50 text-emerald-600 font-bold"}`} onClick={() => setRole("Admin")}>
+            <button
+              className={`flex-1 py-2 rounded-r-lg focus:outline-none ${role === "Admin" ? "bg-teal-600 text-white font-bold" : "bg-emerald-50 text-emerald-600 font-bold"}`}
+              onClick={() => setRole("Admin")}
+            >
               Admin
             </button>
           </div>
@@ -50,17 +56,32 @@ const Login = () => {
           {/* Login form */}
           <form onSubmit={handleSubmit}>
             <div className="mb-4">
-              <input type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-600" />
+              <input
+                type="email"
+                placeholder="Email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-600"
+              />
             </div>
             <div className="mb-4">
-              <input type="password" placeholder="Kata sandi" value={password} onChange={(e) => setPassword(e.target.value)} className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-600" />
+              <input
+                type="password"
+                placeholder="Kata sandi"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-600"
+              />
             </div>
             <div className="mb-4 text-right">
               <a href="#" className="text-teal-600 hover:underline">
                 Lupa kata sandi?
               </a>
             </div>
-            <button type="submit" className="w-full bg-teal-600 text-white py-3 px-10 rounded-md hover:bg-teal-700 transition duration-300">
+            <button
+              type="submit"
+              className="w-full bg-teal-600 text-white py-3 px-10 rounded-md hover:bg-teal-700 transition duration-300"
+            >
               Masuk
             </button>
           </form>
@@ -75,7 +96,10 @@ const Login = () => {
           <div className="mt-4 text-center">
             <p>
               Belum punya akun?{" "}
-              <button onClick={handleRegisterClick} className="text-teal-600 hover:underline focus:outline-none">
+              <button
+                onClick={handleRegisterClick}
+                className="text-teal-600 hover:underline focus:outline-none"
+              >
                 Daftar Disini
               </button>
             </p>
