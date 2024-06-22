@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import Navbar from "../Components/Navbar.jsx";
 import Footer from "../Components/Footer.jsx";
-import foto9 from "../assets/img/foto9.png";
-import foto8 from "../assets/img/foto8.jpg";
-import foto7 from "../assets/img/foto7.png";
+import foto9 from "../img/foto9.png";
+import foto8 from "../img/foto8.jpg";
+import foto7 from "../img/foto7.png";
 
 const About = () => {
   const [showPopup, setShowPopup] = useState(false);
