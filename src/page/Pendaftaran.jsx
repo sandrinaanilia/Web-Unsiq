@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import Navbar from "../Components/Navbar.jsx";
 import Footer from "../Components/Footer.jsx";
-import icon from "../assets/img/iconpopup.png";
-import brosur from "../assets/img/brosur.pdf";
-import syarat from "../assets/img/syarat-biaya.pdf";
-import materi from "../assets/img/materitest.pdf";
+import icon from "../img/iconpopup.png";
+import brosur from "../img/brosur.pdf";
+import syarat from "../img/syarat-biaya.pdf";
+import materi from "../img/materitest.pdf";
 
 function Pendaftaran() {
   const [isFormVisible, setIsFormVisible] = useState(false);

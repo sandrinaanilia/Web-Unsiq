@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import arrow from "../assets/img/arrow.png";
+import arrow from "../img/arrow.png";
 import Sidebar from "../Components/sidebar";
-import Profil from "../assets/img/hamam.png";
-import searchIcon from "../assets/img/search.png";
-import User from "../assets/img/iconuser.png";
+import Profil from "../img/hamam.png";
+import searchIcon from "../img/search.png";
+import User from "../img/iconuser.png";
 
 const Dashboard = () => {
   const navigate = useNavigate();

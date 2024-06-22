@@ -1,6 +1,6 @@
 import Navbar from "../Components/Navbar.jsx";
 import Footer from "../Components/Footer.jsx";
-import berita3 from "../assets/img/berita3.jpg";
+import berita3 from "../img/berita3.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCalendar, faClock } from "@fortawesome/free-solid-svg-icons";
 

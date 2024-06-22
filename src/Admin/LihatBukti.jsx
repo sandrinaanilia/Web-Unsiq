@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import arrow from "../assets/img/arrow.png";
+import arrow from "../img/arrow.png";
 import Sidebar from "../Components/sidebar";
-import Profil from "../assets/img/hamam.png";
-import searchIcon from "../assets/img/search.png";
+import Profil from "../img/hamam.png";
+import searchIcon from "../img/search.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Import FontAwesomeIcon
 import { faEye } from "@fortawesome/free-solid-svg-icons";
 

@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
-import iconwa from "../assets/img/iconwa.png";
-import iconpanah from "../assets/img/iconpanah.png";
+import iconwa from "../img/iconwa.png";
+import iconpanah from "../img/iconpanah.png";
 
 const FAQ = () => {
   const [expanded, setExpanded] = useState(null);

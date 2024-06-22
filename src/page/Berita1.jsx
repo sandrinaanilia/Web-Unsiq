@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../Components/Navbar.jsx";
 import Footer from "../Components/Footer.jsx";
-import berita1 from "../assets/img/berita1.jpg";
+import berita1 from "../img/berita1.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCalendar, faClock } from "@fortawesome/free-solid-svg-icons";
 

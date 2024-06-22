@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate, useLocation } from "react-router-dom";
-import logoponpesma from "../assets/img/logoponpesma.png";
+import logoponpesma from "../img/logoponpesma.png";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
 const Sidebar = () => {

@@ -1,11 +1,11 @@
 import React, { useState, useRef } from "react";
 import Navbar from "../Components/Navbar.jsx";
 import Footer from "../Components/Footer.jsx";
-import DashboardUser from "../assets/img/dashboarduser.png";
-import Pembayaran from "../assets/img/dollar.png";
-import Pengaturan from "../assets/img/setting.png";
-import Keluar from "../assets/img/keluar.png";
-import Paper from "../assets/img/paper.png";
+import DashboardUser from "../img/dashboarduser.png";
+import Pembayaran from "../img/dollar.png";
+import Pengaturan from "../img/setting.png";
+import Keluar from "../img/keluar.png";
+import Paper from "../img/paper.png";
 
 const FormulirPendaftaran = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);

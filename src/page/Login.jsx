@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import welcome1 from "../assets/img/welcome1.jpeg";
+import welcome1 from "../img/welcome1.jpeg";
 
 const Login = () => {
   const [role, setRole] = useState("Mahasiswa");

@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import arrow from "../assets/img/arrow.png";
+import arrow from "../img/arrow.png";
 import Sidebar from "../Components/sidebar";
-import Profil from "../assets/img/hamam.png";
-import searchIcon from "../assets/img/search.png";
-import Berita1 from "../assets/img/berita1.jpg";
-import Berita2 from "../assets/img/berita2.jpg";
+import Profil from "../img/hamam.png";
+import searchIcon from "../img/search.png";
+import Berita1 from "../img/berita1.jpg";
+import Berita2 from "../img/berita2.jpg";
 
 const Galeri = () => {
   const [searchTerm, setSearchTerm] = useState("");

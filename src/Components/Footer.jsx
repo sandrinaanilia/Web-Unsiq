@@ -1,6 +1,6 @@
-import email from "../assets/img/email.jpeg";
-import ig from "../assets/img/ig.jpg";
-import youtube from "../assets/img/Youtube.jpg";
+import email from "../img/email.jpeg";
+import ig from "../img/ig.jpg";
+import youtube from "../img/Youtube.jpg";
 
 const Footer = () => {
   return (

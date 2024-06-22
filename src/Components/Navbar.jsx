@@ -1,8 +1,8 @@
 import { useNavigate } from "react-router-dom";
-import gambar from "../assets/img/LOGO.png";
-import arrow from "../assets/img/arrow.png";
-import user from "../assets/img/user3.png";
-import lonceng from "../assets/img/lonceng.png";
+import gambar from "../img/LOGO.png";
+import arrow from "../img/arrow.png";
+import user from "../img/user3.png";
+import lonceng from "../img/lonceng.png";
 
 const Navbar = () => {
   const navigate = useNavigate();

@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import Sidebar from "../Components/sidebar";
-import Profil from "../assets/img/hamam.png";
-import searchIcon from "../assets/img/search.png";
-import arrow from "../assets/img/arrow.png";
+import Profil from "../img/hamam.png";
+import searchIcon from "../img/search.png";
+import arrow from "../img/arrow.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye, faEdit, faTrash } from "@fortawesome/free-solid-svg-icons";
 

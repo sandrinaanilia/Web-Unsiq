@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import arrow from "../assets/img/arrow.png";
+import arrow from "../img/arrow.png";
 import Sidebar from "../Components/sidebar";
-import Profil from "../assets/img/hamam.png";
-import searchIcon from "../assets/img/search.png";
-import doc from "../assets/img/doc.png";
+import Profil from "../img/hamam.png";
+import searchIcon from "../img/search.png";
+import doc from "../img/doc.png";
 
 const InformasiPendaftaran = () => {
   const [searchTerm, setSearchTerm] = useState("");

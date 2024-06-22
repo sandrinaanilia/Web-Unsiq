@@ -1,14 +1,13 @@
 import React, { useRef, useState } from "react";
-import { NavLink, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import Navbar from "../Components/Navbar.jsx";
 import Footer from "../Components/Footer.jsx";
-import axios from 'axios';
-import DashboardUser from "../assets/img/dashboarduser.png";
-import PembayaranIcon from "../assets/img/dollar.png";
-import Pengaturan from "../assets/img/setting.png";
-import Keluar from "../assets/img/keluar.png";
-import Paper from "../assets/img/paper.png";
-import rincianbiaya from "../assets/img/syarat-biaya.pdf";
+import DashboardUser from "../img/dashboarduser.png";
+import PembayaranIcon from "../img/dollar.png";
+import Pengaturan from "../img/setting.png";
+import Keluar from "../img/keluar.png";
+import Paper from "../img/paper.png";
+import rincianbiaya from "../img/syarat-biaya.pdf";
 
 const Pembayaran = () => {
   const navigate = useNavigate();

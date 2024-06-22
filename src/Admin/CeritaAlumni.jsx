@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import arrow from "../assets/img/arrow.png";
+import arrow from "../img/arrow.png";
 import Sidebar from "../Components/sidebar";
-import Profil from "../assets/img/hamam.png";
-import searchIcon from "../assets/img/search.png";
-import alumni1 from "../assets/img/alumni1.png";
-import alumni2 from "../assets/img/alumni2.png";
+import Profil from "../img/hamam.png";
+import searchIcon from "../img/search.png";
+import alumni1 from "../img/alumni1.png";
+import alumni2 from "../img/alumni2.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEdit, faTrash } from "@fortawesome/free-solid-svg-icons";
 

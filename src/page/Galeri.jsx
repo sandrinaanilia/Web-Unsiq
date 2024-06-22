@@ -1,16 +1,16 @@
 import Navbar from "../Components/Navbar.jsx";
 import Footer from "../Components/Footer.jsx";
 import ImageCard from "../Components/ImageCard.jsx";
-import galeribsr from "../assets/img/galerigede.png";
-import galeri1 from "../assets/img/galeri1.png";
-import galeri3 from "../assets/img/galeri3.png";
-import galeri2 from "../assets/img/galeri2.png";
-import galeri4 from "../assets/img/galeri4.png";
-import galeri5 from "../assets/img/galeri5.png";
-import galeri6 from "../assets/img/galeri6.png";
-import galeri7 from "../assets/img/galeri7.png";
-import galeri8 from "../assets/img/galeri8.png";
-import galeri9 from "../assets/img/galeri9.png";
+import galeribsr from "../img/galerigede.png";
+import galeri1 from "../img/galeri1.png";
+import galeri3 from "../img/galeri3.png";
+import galeri2 from "../img/galeri2.png";
+import galeri4 from "../img/galeri4.png";
+import galeri5 from "../img/galeri5.png";
+import galeri6 from "../img/galeri6.png";
+import galeri7 from "../img/galeri7.png";
+import galeri8 from "../img/galeri8.png";
+import galeri9 from "../img/galeri9.png";
 
 const Galeri = () => {
   return (

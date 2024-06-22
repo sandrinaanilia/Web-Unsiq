@@ -119,7 +119,7 @@ body {
 
 .hero {
   position: relative;
-  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../assets/img/awal.jpg") no-repeat center center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../img/awal.jpg") no-repeat center center/cover;
   background-size: cover;
   background-position: center;
   color: white;
@@ -370,7 +370,7 @@ body {
   padding: 20px;
   font-size: 20px;
   font-family: "Poppins";
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../assets/img/background.jpg") no-repeat center center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/background.jpg") no-repeat center center/cover;
   color: white; /* Mengatur warna teks menjadi putih agar kontras dengan background */
 }
 
