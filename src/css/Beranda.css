@@ -217,17 +217,16 @@ body {
 /* Tentang kami */
 .about-us {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
   padding: 50px 0px;
   background-color: #f8f8f8;
 }
 
 .text-content {
-  max-width: 400px;
-  margin-right: 220px;
-  text-align: left;
+  max-width: 100%;
+  margin-right: 0;
+  text-align: center;
 }
 
 .section-title {
@@ -237,23 +236,23 @@ body {
 }
 
 .video-title {
-  font-size: 36px;
+  font-size: 28px;
   font-weight: 600;
   margin-bottom: 20px;
 }
 
 .description {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 400;
   margin-bottom: 30px;
 }
 
 .play-button {
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 600;
   color: white;
   background-color: #008374;
-  padding: 5px 20px;
+  padding: 10px 20px;
   text-decoration: none;
   border-radius: 20px;
   border: 1px solid black;
@@ -267,8 +266,62 @@ body {
 
 .video iframe {
   border-radius: 10px; /* Membuat sudut video agak tumpul */
+  width: 100%;
+  height: 315px;
 }
-/* end tentang kami  */
+
+/* Responsif untuk layar lebar */
+@media (min-width: 768px) {
+  .about-us {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .text-content {
+    max-width: 400px;
+    margin-right: 20px;
+    text-align: left;
+  }
+
+  .video-title {
+    font-size: 36px;
+  }
+
+  .description {
+    font-size: 20px;
+  }
+
+  .play-button {
+    font-size: 25px;
+  }
+
+  .video iframe {
+    width: 560px;
+    height: 315px;
+  }
+}
+
+/* Responsif untuk layar sangat lebar */
+@media (min-width: 1024px) {
+  .about-us {
+    padding: 50px 0;
+  }
+
+  .text-content {
+    margin-right: 220px;
+  }
+
+  .play-button {
+    padding: 5px 20px;
+  }
+
+  .video iframe {
+    width: 560px;
+    height: 315px;
+  }
+}
+/* end tentang kami */
+
 
 /* Program Unggulan */
 .program-unggulan {
