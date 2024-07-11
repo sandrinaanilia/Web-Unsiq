@@ -97,10 +97,10 @@ const Beranda = () => {
       </div>
 
       <section className="berita-terbaru">
-        <h2 id="c2" className="berita-title">
-          BERITA TERBARU
-        </h2>
-        <div className="berita-container">
+  <h2 id="c2" className="berita-title">
+    BERITA TERBARU
+  </h2>
+  <div className="berita-container">
           <div className="berita-main">
             <a href="/beritabesar" className="berita-link">
               <img src={berita} alt="Pelaksanaan Pengajian Malam Nuzulul" />
@@ -115,52 +115,52 @@ const Beranda = () => {
                   <span>2 bulan lalu</span>
                 </div>
               </div>
-            </a>
+      </a>
+    </div>
+    <div className="sidebar lg:ml-8">
+      <div className="small-news mb-4">
+        <a href="/berita1" className="small-news-link flex items-start">
+          <img src={berita1} alt="Tim Hadroh IPOQSH" className="w-1/3 lg:w-1/4" />
+          <div className="small-news-content ml-4">
+            <h4>TIM HADROH IPOQSH TU...</h4>
+            <p>Dimeriahkan oleh grup rebana IPOQSH</p>
+            <span>2 bulan lalu</span>
           </div>
-          <div className="sidebar">
-            <div className="small-news">
-              <a href="/berita1" className="small-news-link">
-                <img src={berita1} alt="Tim Hadroh IPOQSH" />
-                <div className="small-news-content">
-                  <h4>TIM HADROH IPOQSH TU...</h4>
-                  <p>Dimeriahkan oleh grup rebana IPOQSH</p>
-                  <span>2 bulan lalu</span>
-                </div>
-              </a>
-            </div>
-            <div className="small-news">
-              <a href="/berita2" className="small-news-link">
-                <img src={berita2} alt="Informasi Daftar Ula..." />
-                <div className="small-news-content">
-                  <h4>INFORMASI DAFTAR ULA...</h4>
-                  <p>Cek disini untuk informasi terkait biaya daftar ulang</p>
-                  <span>1 bulan lalu</span>
-                </div>
-              </a>
-            </div>
-            <div className="small-news">
-              <a href="/berita3" className="small-news-link">
-                <img src={berita3} alt="Halal Bihalal & Tasya..." />
-                <div className="small-news-content">
-                  <h4>HALAL BIHALAL & TASYA...</h4>
-                  <p>Tasyakuran dalam rangka Halal bihalal dan pembukaan</p>
-                  <span>2 bulan lalu</span>
-                </div>
-              </a>
-            </div>
-            <div className="small-news">
-              <a href="/berita4" className="small-news-link">
-                <img src={berita4} alt="PPTQ Unsiq 2 Berhasil..." />
-                <div className="small-news-content">
-                  <h4>PPTQ Unsiq 2 Berhasil...</h4>
-                  <p>PPTQ Unsiq 2 berhasil membawa 2 piala dalam rangka hari santri</p>
-                  <span>2 bulan lalu</span>
-                </div>
-              </a>
-            </div>
+        </a>
+      </div>
+      <div className="small-news mb-4">
+        <a href="/berita2" className="small-news-link flex items-start">
+          <img src={berita2} alt="Informasi Daftar Ula..." className="w-1/3 lg:w-1/4" />
+          <div className="small-news-content ml-4">
+            <h4>INFORMASI DAFTAR ULA...</h4>
+            <p>Cek disini untuk informasi terkait biaya daftar ulang</p>
+            <span>1 bulan lalu</span>
           </div>
-        </div>
-      </section>
+        </a>
+      </div>
+      <div className="small-news mb-4">
+        <a href="/berita3" className="small-news-link flex items-start">
+          <img src={berita3} alt="Halal Bihalal & Tasya..." className="w-1/3 lg:w-1/4" />
+          <div className="small-news-content ml-4">
+            <h4>HALAL BIHALAL & TASYA...</h4>
+            <p>Tasyakuran dalam rangka Halal bihalal dan pembukaan</p>
+            <span>2 bulan lalu</span>
+          </div>
+        </a>
+      </div>
+      <div className="small-news mb-4">
+        <a href="/berita4" className="small-news-link flex items-start">
+          <img src={berita4} alt="PPTQ Unsiq 2 Berhasil..." className="w-1/3 lg:w-1/4" />
+          <div className="small-news-content ml-4">
+            <h4>PPTQ Unsiq 2 Berhasil...</h4>
+            <p>PPTQ Unsiq 2 berhasil membawa 2 piala dalam rangka hari santri</p>
+            <span>2 bulan lalu</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
 
       <section className="alumni-section">
         <h2 className="title">Tentang Alumni</h2>

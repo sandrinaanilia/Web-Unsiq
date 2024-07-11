@@ -1,25 +1,22 @@
 import React, { useState } from "react";
 import Navbar from "../Components/Navbar.jsx";
 import Footer from "../Components/Footer.jsx";
-import icon from "../img/iconpopup.png";
 import brosur from "../img/brosur.pdf";
 import syarat from "../img/syarat-biaya.pdf";
 import materi from "../img/materitest.pdf";
 
 function Pendaftaran() {
-  const [isFormVisible, setIsFormVisible] = useState(false);
   const [clickedButton, setClickedButton] = useState("");
-
-  const handleFormClick = () => {
-    setIsFormVisible(!isFormVisible);
-  };
 
   const handleButtonClick = (button) => {
     setClickedButton(button);
     setTimeout(() => {
       setClickedButton("");
-      setIsFormVisible(false);
     }, 300);
+  };
+
+  const handleFormClick = () => {
+    window.location.href = "https://forms.gle/mXFdAA4Q1gDZt21i7";
   };
 
   return (
@@ -77,48 +74,9 @@ function Pendaftaran() {
           </ol>
           <div className="flex justify-center">
             <button onClick={handleFormClick} className="bg-teal-600 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded-3xl focus:outline-none focus:shadow-outline">
-              {isFormVisible ? "Tutup Formulir" : "Isi Formulir"}
+              Isi Formulir
             </button>
           </div>
-          {isFormVisible && (
-            <div className="fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center z-50">
-              <div className="bg-white rounded-lg shadow-lg p-8 w-11/12 md:w-96 relative">
-                <button onClick={handleFormClick} className="absolute top-4 right-4 text-gray-500 hover:text-gray-700">
-                  &times;
-                </button>
-                <form className="space-y-4">
-                  <img src={icon} alt="icon pop-up" className="mx-auto mb-4" />
-                  <label className="block text-gray-700 text-center font-bold">Anda harus masuk akun terlebih dahulu untuk isi formulir</label>
-                  <a href="/login" className="block w-full">
-                    <button
-                      type="button"
-                      onClick={() => handleButtonClick("Masuk")}
-                      className={`border-2 border-gray-300 w-full ${
-                        clickedButton === "Masuk" ? "bg-teal-600 text-white" : "bg-white text-black"
-                      } hover:bg-teal-600 hover:text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline`}
-                    >
-                      Masuk
-                    </button>
-                  </a>
-                  <button
-                    type="button"
-                    onClick={() => handleButtonClick("Tutup")}
-                    className={`border-2 border-gray-300 w-full ${
-                      clickedButton === "Tutup" ? "bg-teal-600 text-white" : "bg-white text-black"
-                    } hover:bg-teal-600 hover:text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline`}
-                  >
-                    Tutup
-                  </button>
-                  <p className="text-center text-gray-600">
-                    Belum memiliki akun?{" "}
-                    <a href="/register" className="font-bold text-teal-600">
-                      Daftar disini!
-                    </a>
-                  </p>
-                </form>
-              </div>
-            </div>
-          )}
         </div>
       </div>
 

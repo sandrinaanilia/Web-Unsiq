@@ -42,16 +42,7 @@ const Navbar = () => {
           <button onClick={() => navigate("/faq")}>FAQ</button>
         </li>
       </ul>
-      <div className={loginState ? "profil-btn" : "login-btn"}>
-        {loginState ? (
-          <div className="flex items-center gap-4">
-            <img src={user} alt="User" className="w-8 h-8" />
-            <img src={lonceng} alt="Notifications" className="w-8 h-8" />
-          </div>
-        ) : (
-          <button onClick={() => navigate("/login")}>Masuk</button>
-        )}
-      </div>
+     
     </nav>
   );
 };
