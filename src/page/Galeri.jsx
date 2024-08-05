@@ -25,20 +25,20 @@ const Galeri = () => {
             <div className="grid grid-cols-1 mx-auto ">
               <ImageCard image={galeribsr} title="" className="h-96 rounded-lg mt-8" />
             </div>
-            <div className="grid grid-cols-3 gap-1 justify-center">
-              <ImageCard image={galeri1} title="" className="w-full h-40 rounded-lg" />
-              <ImageCard image={galeri2} title="" className="w-full h-40 rounded-lg" />
-              <ImageCard image={galeri3} title="" className="w-full h-40 rounded-lg" />
+            <div className="grid grid-cols-3 gap-6 justify-center mx-auto">
+              <ImageCard image={galeri1} title="" className="w-full h-40 rounded-sm" />
+              <ImageCard image={galeri2} title="" className="w-full h-40 rounded-sm" />
+              <ImageCard image={galeri3} title="" className="w-full h-40 rounded-sm" />
             </div>
-            <div className="grid grid-cols-3 gap-1 justify-center">
-              <ImageCard image={galeri4} title="" className="w-full h-40 rounded-lg" />
-              <ImageCard image={galeri5} title="" className="w-full h-40 rounded-lg" />
-              <ImageCard image={galeri6} title="" className="w-full h-40 rounded-lg" />
+            <div className="grid grid-cols-3 gap-6 justify-center mx-auto">
+              <ImageCard image={galeri4} title="" className="w-full h-40 rounded-sm" />
+              <ImageCard image={galeri5} title="" className="w-full h-40 rounded-sm" />
+              <ImageCard image={galeri6} title="" className="w-full h-40 rounded-sm" />
             </div>
-            <div className="grid grid-cols-3 gap-1 justify-center">
-              <ImageCard image={galeri7} title="" className="w-full h-40 rounded-lg" />
-              <ImageCard image={galeri8} title="" className="w-full h-40 rounded-lg" />
-              <ImageCard image={galeri9} title="" className="w-full h-40 rounded-lg" />
+            <div className="grid grid-cols-3 gap-6 justify-center mx-auto">
+              <ImageCard image={galeri7} title="" className="w-full h-40 rounded-sm" />
+              <ImageCard image={galeri8} title="" className="w-full h-40 rounded-sm" />
+              <ImageCard image={galeri9} title="" className="w-full h-40 rounded-sm" />
             </div>
           </div>
         </div>
@@ -54,3 +54,4 @@ const Galeri = () => {
 };
 
 export default Galeri;
+

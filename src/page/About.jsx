@@ -39,11 +39,11 @@ const About = () => {
     { time: "03.00-04.30", activity: "Kuliah" },
     { time: "03.00-04.30", activity: "Sholat Maghrib, mujahadah & ngaji kitab" },
     { time: "03.00-04.30", activity: "Sholat Isya berjamaah" },
-    { time: "03.00-04.30", activity: "Setoran Al-Qur’an" },
+    { time: "03.00-04.30", activity: "Setoran Al-Qur'an" },
     { time: "03.00-04.30", activity: "Istirahat dan Tidur malam" },
   ];
 
-  const activities1 = [{ activity: " Masa Ta’aruf" }, { activity: "Ziarah" }, { activity: " Tasmin" }, { activity: "Ro’an" }, { activity: "Muhadloroh" }, { activity: " Agenda Ramadhan" }];
+  const activities1 = [{ activity: " Masa Ta'aruf" }, { activity: "Ziarah" }, { activity: " Tasmin" }, { activity: "Ro'an" }, { activity: "Muhadloroh" }, { activity: " Agenda Ramadhan" }];
   const activities2 = [{ activity: "Futsal    " }, { activity: "Tiroah" }, { activity: "Rebana" }];
 
   return (
@@ -51,8 +51,7 @@ const About = () => {
       <Navbar />
       <div className="bg-teal-600 h-96 flex items-center justify-center">
         <div className="text-white text-center mt-9">
-          <h1 className="font-bold text-5xl md:text-5xl py-2">Profil Pondok Pesantren Tahfidzul</h1>
-          <h2 className="font-bold text-5xl md:text-5xl py-4">Qur'an Mahasiswa Unsiq II</h2>
+          <h1 className="font-bold text-6xl md:text-6xl py-2">Tentang Kami</h1>
         </div>
       </div>
 
@@ -61,7 +60,7 @@ const About = () => {
           <div className="biografi-content lg:w-1/2 p-10">
             <h2 className="text-2xl font-bold mb-5">BIOGRAFI PENGASUH</h2>
             <h3 className="text-4xl mb-5 font-bold">Bpk K. Hayatuddin M.Ag., Alh</h3>
-            <h4 classname="text-4xl text-gray mb-2">Beliau merupakan pengasuh di Pondok Pesantren Tahfidzul Qur’an Mahasiswa UNSIQ 2, dan salah satu lulusan terbaik di program Pascasarjana di Universitas Sains Alqur’an Wonosobo.</h4>
+            <h4 classname="text-4xl text-gray mb-2">Beliau merupakan pengasuh di Pondok Pesantren Tahfidzul Qur'an Mahasiswa UNSIQ 2, dan salah satu lulusan terbaik di program Pascasarjana di Universitas Sains Alqur'an Wonosobo.</h4>
           </div>
           <div className="biografi-img lg:w-1/1">
             <img src={foto9} alt="" className="w-full h-auto" />
@@ -73,8 +72,8 @@ const About = () => {
         <h2 className="text-2xl font-extrabold mb-6 text-center">Sejarah PPTQ UNSIQ 2</h2>
         <div className="flex flex-col md:flex-row items-center gap-10 bg-teal-600 text-white rounded-2xl p-6">
           <img src={foto8} alt="Sejarah PPTQ UNSIQ 2" className="w-60 h-50 max-w-md rounded-2xl object-cover" />
-          <div>
-            <p className="text-white md:text-justify">
+          <div className="flex-1 text-justify">
+            <p className="text-white">
               Ide pendirian Ponpesma yang diperuntukkan bagi Mahasiswa sudah lama dipikirkan, yaitu sejak kepemimpinan Rektor pertama IIQ yaitu KH. Muntaha, Al-Hafidz. Tahun 1999, ketika berdiri Akademi Keperawatan IIQ, setiap mahasiswa
               Akper diwajibkan untuk tinggal di Asrama. Pada tahun 2007 UNSIQ mendapatkan bantuan bangunan Rusunawa lewat Direktorat Pekerjaan Umum RI. Bangunan tersebut kemudian dipergunakan untuk Ponpesma Putri UNSIQ, sampai saat ini
               jumlah santri kurang lebih 300 santri. Sepuluh tahun kemudian, pada tahun 2017 dibangunlah Rusunawa ke 2 di Kampus UNSIQ II di Krasak Mojotengah Wonosobo, Rusunawa tersebut digunakan untuk Pondok Pesantren Tahfiz Putra UNSIQ
@@ -88,10 +87,10 @@ const About = () => {
         <div className="flex flex-col md:flex-row items-center gap-8">
           <div className="flex-1 ">
             <h2 className="text-3xl font-bold mb-4">Visi</h2>
-            <p className="text-gray-700 mb-8">Terwujudnya pusat pemantapan akidah Islam Ahlussunah Wal jama’ah An-Nahdhiyah, pengembangan Ilmu-ilmu ke Al-Qur’anan, amal sholeh dan akhlak mulia bagi Mahasiswa UNSIQ.</p>
+            <p className="text-gray-700 mb-8">Terwujudnya pusat pemantapan akidah Islam Ahlussunah Wal jama'ah An-Nahdhiyah, pengembangan Ilmu-ilmu ke Al-Qur'anan, amal sholeh dan akhlak mulia bagi Mahasiswa UNSIQ.</p>
             <h2 className="text-3xl font-bold mb-4">Misi</h2>
             <ul className="list-disc list-inside text-gray-700 space-y-2">
-              <li>Mengantarkan mahasiswa memiliki kemantapan akidah Ahlussunah Wal jama’ah An-Nahdhiyah dan kedalaman spiritual, keagungan akhlak, keluasan ilmu dan kematangan profesional.</li>
+              <li>Mengantarkan mahasiswa memiliki kemantapan akidah Ahlussunah Wal jama'ah An-Nahdhiyah dan kedalaman spiritual, keagungan akhlak, keluasan ilmu dan kematangan profesional.</li>
               <li>Mencetak generasi Tahfidz Al-Quran dan menjaga hafalan.</li>
               <li>Memperdalam Ilmu-ilmu Al-Quran.</li>
               <li>Berketrampilan dalam membaca kitab kuning, berbahasa Arab dan Inggris.</li>
@@ -119,7 +118,7 @@ const About = () => {
       <section className="text-center py-8">
         <div className="bg-teal-600 text-white text-center py-8 rounded-2xl max-w-5xl mx-auto">
           <h2 className="text-4xl font-bold">Daftar sekarang untuk Penerimaan Santri Baru</h2>
-          <p className="text-2xl">Pondok Pesantren Tahfidzul Qur’an Mahasiswa UNSIQ 2 Tahun 2024 / 2025</p>
+          <p className="text-2xl">Pondok Pesantren Tahfidzul Qur'an Mahasiswa UNSIQ 2 Tahun 2024 / 2025</p>
         </div>
       </section>
 

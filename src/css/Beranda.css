@@ -403,9 +403,8 @@ body {
   text-align: left;
   border-radius: 12px;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start; /* Align items to the start (left) */
-  position: relative; /* Make positioning easier */
+  justify-content: space-between;
+  align-items: center;
 }
 
 .title-daftar {
@@ -416,6 +415,7 @@ body {
   margin-bottom: 10px;
   text-align: left;
   margin-top: 20px;
+  flex: 1;
 }
 
 .daftar h2 {
@@ -437,8 +437,8 @@ body {
   padding: 10px 20px;
   text-decoration: none;
   border-radius: 10px;
-  margin-top: 20px; /* Space between the text and button */
-  align-self: center; /* Center the button horizontally */
+  margin-top: 20px;
+  align-self: flex-end;
 }
 
 .terms {
@@ -700,10 +700,11 @@ body {
 
 .alumni-section {
   background-color: #008374;
-  padding: 20px;
-  margin-top: 20px;
+  padding: 10px; /* Mengurangi padding */
+  margin: 10px auto; /* Mengurangi margin atas dan bawah, serta menjadikan section sejajar di tengah */
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 80%; /* Menentukan lebar section agar lebih terpusat */
 }
 
 .location-section {
@@ -805,9 +806,9 @@ p {
 .location-content {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: flex-start; /* Pastikan elemen di atas sejajar */
   margin-top: 20px;
-  height: 100%;
+  height: auto; /* Ubah height menjadi auto untuk menyesuaikan konten */
 }
 
 .contact-info {
@@ -834,6 +835,7 @@ p {
   width: 55%;
   height: auto;
   text-align: right;
+  align-self: flex-start; /* Menjaga agar peta sejajar dengan tulisan di sebelah kiri */
 }
 
 .map iframe {
@@ -910,3 +912,4 @@ p {
   }
 }
 /* End of Footer */
+

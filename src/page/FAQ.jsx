@@ -18,15 +18,15 @@ const FAQ = () => {
   const faqItems = [
     {
       question: "Berapa biaya daftar ulang di PPTQ Mahasiswa UNSIQ 2?",
-      answer: "Untuk Biaya di tahun Ajaran 2024/2025 sebesar Rp. 1.200.000",
+      answer: "Untuk Biaya di tahun Ajaran 2024/2025 sebesar Rp. 1.500.000",
     },
     {
       question: "Kapan dibuka Pendaftaran Santri baru di PPTQ Mahasiswa UNSIQ 2?",
-      answer: "Pendaftaran dibuka mulai tanggal 1 Januari 2024 hingga 30 April 2024.",
+      answer: "Pendaftaran dibuka mulai tanggal 1 Januari 2024 hingga 30 Agustus 2024.",
     },
     {
       question: "Dimana lokasi PPTQ Mahasiswa UNSIQ 2?",
-      answer: "Lokasi PPTQ Mahasiswa UNSIQ 2 berada di Jalan Raya Semarang No. 42, Semarang.",
+      answer: "Lokasi PPTQ Mahasiswa UNSIQ 2 berada di Desa Krasak, Kec.Mojotengah, Kab.Wonosobo.",
     },
     {
       question: "Program apa saja yang ada di PPTQ Mahasiswa UNSIQ 2?",
